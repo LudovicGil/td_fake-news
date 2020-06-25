@@ -1,0 +1,33 @@
+/*** GENERALS ***/
+@font-face {
+  font-family: "fontawesome";
+  src: url("../../src/font/webfonts/fa-brands-400.woff2") format("woff2");
+  src: url("../../src/font/webfonts/fa-regular-400.woff2") format("woff2");
+  src: url("../../src/font/webfonts/fa-solid-900.woff2") format("woff2");
+}
+
+/** {
+    font-family: 'Arvo', 'Source Sans Pro', fontawesome, sans-serif ;
+}*/
+/* color & variable */
+:root {
+  /* color */
+  --background-light: #ffffff;
+  --background-grey: #f0f0f0;
+  --background-dark: #444444;
+  --orange: #ed786a;
+  --orange-hover: #fd887a;
+  --red: #cc0000;
+  --light-gray: #e5e5e5;
+  --white: #ffffff;
+  --light-grey: #888888;
+  --middle-grey: #777777;
+  --grey: #666666;
+  --dark-grey: #3c3c3c;
+
+  /* style */
+  --text-shadow: 2px 2px 1px rgba(136, 136, 136, 0.5);
+  --box-shadow: 3px 3px 1px 0px rgba(136, 136, 136, 0.2);
+  --border-radius: 4px;
+  --border-picture: 8px solid var(--background-grey);
+}
