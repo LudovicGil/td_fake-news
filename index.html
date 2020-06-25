@@ -11,6 +11,7 @@
             href="https://fonts.googleapis.com/css2?family=Arvo:wght@700&family=Source+Sans+Pro:wght@300;400;600&display=swap"
             rel="stylesheet"
     />
+    <link rel="stylesheet" href="src/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="style_and_js/style/reset.css"/>
     <link rel="stylesheet" href="style_and_js/style/style.css"/>
     <script
@@ -26,15 +27,15 @@
     <header>
         <nav>
             <!--HAMBURGER MENU-->
-            <div class="card">
-                <div class="mainWrapper">
-                    <div class="menuIcons">
-                        <div class="line1 no-active"></div>
-                        <div class="line2 no-active"></div>
-                        <div class="line3 no-active"></div>
-                    </div>
+
+            <div class="mainWrapper">
+                <div class="menuIcons">
+                    <div class="line1 no-active"></div>
+                    <div class="line2 no-active"></div>
+                    <div class="line3 no-active"></div>
                 </div>
             </div>
+
             <!------------------>
             <ul class="menu">
                 <li>
@@ -68,10 +69,12 @@
                 </li>
             </ul>
         </nav>
-        <h1 class="title">Fake news</h1>
-        <p class="p-title">
-            Contient de l'authentique html5 et de la véritable CSS3.
-        </p>
+        <div class="brand-name">
+            <h1 class="title">Fake news</h1>
+            <p class="p-title">
+                Contient de l'authentique html5 et de la véritable CSS3.
+            </p>
+        </div>
     </header>
     <div class="separator"></div>
     <div class="separator"></div>
@@ -79,7 +82,7 @@
 
     <main>
         <section class="last-news">
-            <h1>les dernieres <strong>fake news</strong></h1>
+            <h1>les dernieres <strong>fake news</strong>!</h1>
             <div class="last-news-container">
                 <article>
                     <img src="src/img/pic01.jpg" alt="Livres sur la tranche"/>
@@ -107,7 +110,7 @@
                     <img src="src/img/pic03.jpg" alt="Livres sur la tranche"/>
                     <h2>Cerisier alien</h2>
                     <p>
-                        <strong>EXCLUSIF !</strong> Les aliens sotn parmi nous ! Ils se
+                        <strong>EXCLUSIF !</strong> Les aliens sont parmis nous ! Ils se
                         cachent dans les cerisier déguisés en fleurs. L'interview
                         exclusive de <a href="#">Bob l'extraterrestre.</a>
                     </p>
@@ -127,12 +130,12 @@
     <img src="src/img/banner.jpg" alt=""/>
     <div class="text-block">
         <p>
-            "On peut tromper <span>une</span> fois
-            <span>mille</span> personnes,<br/>
-            mais on ne peut pas tromper <span>mille</span> fois
-            <span>une</span> personne."
+            "On peut tromper <span class="bold">une</span> fois
+            <span class="bold">mille</span> personnes,<br/>
+            mais on ne peut pas tromper <span class="bold">mille</span> fois
+            <span class="bold">une</span> personne."
         </p>
-        <p>- EMILE</p>
+        <p><span class="italic">- éMILE</span></p>
     </div>
 </div>
 <!------------------------------------------------>
@@ -159,8 +162,6 @@
                         similique sit? Lorem ipsum dolor sit amet, consectetur
                         adipisicing elit. Accusantium adipisci aperiam consequuntur
                         deserunt ea eligendi et excepturi libero, nemo quia saepe sint
-                        sunt voluptate? Delectus distinctio maxime quos similique vitae!
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
                         aperiam dicta labore modi nobis non optio, temporibus vel vitae!
                         Ad asperiores blanditiis
                         <strong>Curabitur Leo Nibh</strong>
@@ -275,10 +276,10 @@
         </div>
     </section>
 </div>
-</div>
+
 <div class="background">
     <div class="container-content">
-        <section>
+        <section class="form-zone">
             <h3>
                 des questions ?<br/>
                 <strong>contactez-nous:</strong>
@@ -302,23 +303,23 @@
                 <div class="location">
                     <p>Nous vous répondrons exclusivement par pigeon voyageur.</p>
                     <ul>
-                        <li>
+                        <li><i class="fas fa-home"></i>
                             <a href="">
                                 1234 Ch. de la perdition <br/>
                                 457R6 Quelque-Part <br/>
                                 Jupiter
                             </a>
                         </li>
-                        <li><a href="tel:+xxxxxxxxxx">(0_O\O_\O/_O/(T_T)</a></li>
-                        <li>
+                        <li><i class="fas fa-phone"></i><a href="tel:+xxxxxxxxxx">(0_O\O_\O/_O/(T_T)</a></li>
+                        <li><i class="fas fa-envelope"></i>
                             <a href="mailto:ne-pas-repondre@fake-news.info"
                             >ne-pas-repondre@fake-news.info</a
                             >
                         </li>
-                        <li><a href="#">@Fakenews</a></li>
-                        <li><a href="#">instagram.com/fake-news</a></li>
-                        <li><a href="#">dribble.com/fake-news</a></li>
-                        <li><a href="#">facebook.com/fake-news</a></li>
+                        <li><i class="fab fa-twitter"></i><a href="#">@Fakenews</a></li>
+                        <li><i class="fab fa-instagram"></i><a href="#">instagram.com/fake-news</a></li>
+                        <li><i class="fab fa-dribbble"></i><a href="#">dribble.com/fake-news</a></li>
+                        <li><i class="fab fa-facebook-f"></i><a href="#">facebook.com/fake-news</a></li>
                     </ul>
                 </div>
             </div>
@@ -328,11 +329,10 @@
 
     <footer>
         <p>
-            &copy; Fake News. Tous droits réservés. |
+            &copy; Fake News. Tous droits réservés.<br>
             <a href="#">Mentions Illégales</a>
         </p>
     </footer>
-</div>
 </div>
 <script src="style_and_js/js/app.js"></script>
 </body>
