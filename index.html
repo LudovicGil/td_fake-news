@@ -44,7 +44,7 @@
                 <li>
                     <a href="#"><i class="fas fa-chart-bar"></i>TRUCS EN TROC</a>
                     <ul>
-                        <li><a href="#">FAUX</a></li>
+                        <li><a href="#">Faux</a></li>
                         <li><a href="#">CONTRE VERITES</a></li>
                         <li><a href="#">ERREURS</a></li>
                         <li>
@@ -287,8 +287,10 @@
             <div class="form-list-container">
                 <div class="form-container">
                     <form>
-                        <input type="text" id="lastName" placeholder="Nom"/>
-                        <input type="email" id="email" placeholder="Email"/>
+                        <div class="input-flex">
+                            <input type="text" id="lastName" placeholder="Nom"/>
+                            <input type="email" id="email" placeholder="Email"/>
+                        </div>
                         <textarea
                                 id="textarea"
                                 cols="30"
@@ -296,7 +298,7 @@
                                 placeholder="Message"
                         ></textarea>
                     </form>
-                    <button type="submit">
+                    <button type="submit" id="btnSubmit">
                         <i class="fas fa-envelope"></i> Il va faire tout noir !
                     </button>
                 </div>
@@ -329,7 +331,7 @@
 
     <footer>
         <p>
-            &copy; Fake News. Tous droits réservés.<br>
+            &copy; Fake News. Tous droits réservés.
             <a href="#">Mentions Illégales</a>
         </p>
     </footer>
