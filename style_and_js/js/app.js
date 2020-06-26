@@ -14,11 +14,13 @@ menuIcons.addEventListener('click', function () {
     this.classList.toggle('active');
     menu.classList.toggle('active');
     btnWrapper.classList.toggle('menu-actived');
-    body.classList.toggle('menu-actived');;
+    body.classList.toggle('menu-actived');
+
     for (const element of line) {
         element.classList.remove('no-active');
     }
 });
+
 
 const email = document.querySelector('#email');
 const btnSubmit = document.querySelector('#btnSubmit');
@@ -26,13 +28,29 @@ const name = document.querySelector('#lastName');
 const textarea = document.querySelector('#textarea');
 const p = document.createElement('p');
 
-let emailRegex = /^([a-zA-Z0-9_.\-+])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-let nameRegex = /^[A-Z][A-Za-z\\é\\è\\ê\-]+$/
-let textIsGood = textarea.value > 0;
-let nameIsGood = name.value.length > 0 && !NaN && nameRegex
-btnSubmit.addEventListener('click', function (e) {
-    e.preventDefault();
-    console.log(nameIsGood)
-})
-console.log(nameRegex.test("Ludovic@gmail.com"))
-console.log(emailRegex.test("Ludovic@gmail.com"))
+
+const emailRegex = /^([a-zA-Z0-9_.\-+])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+const nameRegex = /^[A-Za-z\\é\\è\\ê\-]+$/;
+
+
+btnSubmit.addEventListener('click', function () {
+    let div = document.createElement('div');
+    let message;
+    if(name.value === '' || !nameRegex.test(name.value)) {
+        message = "Les lettres anonymes, c'est mal !";
+        name.appendChild(div);
+        div.innerHTML = message;
+        div.style.color = "red";
+    }
+    if(email.value === '' || !emailRegex.test(email.value)) {
+        console.log('Mail Error');
+    }
+    if(textarea.value === '') {
+        console.log('Text Error');
+    }
+    else {
+        console.log('Succes');
+    }
+
+});
+

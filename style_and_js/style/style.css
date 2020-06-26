@@ -781,7 +781,9 @@ footer p {
         color: var(--light-grey);
 
     }
-
+    .menu ul  {
+        margin-bottom: 10px;
+    }
     .menu li a {
         letter-spacing: .2rem;
         color: var(--light-grey);
