@@ -27,7 +27,8 @@ const btnSubmit = document.querySelector('#btnSubmit');
 const name = document.querySelector('#lastName');
 const textarea = document.querySelector('#textarea');
 const p = document.createElement('p');
-
+const errorName = document.querySelector('#errorName');
+const errorMail = document.querySelector('#errorMail');
 
 const emailRegex = /^([a-zA-Z0-9_.\-+])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 const nameRegex = /^[A-Za-z\\é\\è\\ê\-]+$/;
@@ -38,18 +39,24 @@ btnSubmit.addEventListener('click', function () {
     let message;
     if(name.value === '' || !nameRegex.test(name.value)) {
         message = "Les lettres anonymes, c'est mal !";
-        name.appendChild(div);
-        div.innerHTML = message;
-        div.style.color = "red";
+        errorName.innerHTML = message;
+        errorName.style.color = "red";
     }
     if(email.value === '' || !emailRegex.test(email.value)) {
-        console.log('Mail Error');
+        message = "Et comment on fait pour vous spammer ?";
+        errorMail.innerHTML = message;
+        errorMail.style.color = "red";
+        message = '';
     }
     if(textarea.value === '') {
-        console.log('Text Error');
+        message = "Non mais allô quoi, tu nous écris et tu nous écris rien ?";
+        errorName.innerHTML = message;
+        message = '';
+        errorName.style.color = "red";
     }
     else {
         console.log('Succes');
+        errorName.innerHTML = '';
     }
 
 });
