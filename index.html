@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <!-- TODO la modal -->
     <div class="container-content">
       <header>
         <nav>
@@ -294,12 +295,15 @@
                     <div id="errorMail"></div>
                   </div>
                 </div>
-                <textarea
-                  id="textarea"
-                  cols="30"
-                  rows="7"
-                  placeholder="Message"
-                ></textarea>
+                <div class="text-aera">
+                  <textarea
+                    id="textarea"
+                    cols="30"
+                    rows="7"
+                    placeholder="Message"
+                  ></textarea>
+                  <div id="errorText"></div>
+                </div>
               </form>
               <button type="button" id="btnSubmit">
                 <i class="fas fa-envelope"></i> Il va faire tout noir !
@@ -352,6 +356,17 @@
           <a href="#">Mentions Illégales</a>
         </p>
       </footer>
+    </div>
+    <div id="layer" class="modal-hidden">
+      <div id="modal">
+        <p>
+          On vous avait prévenu qu'il allait faire tout noir... <br />
+          Votre message en a profité pour s'enfuir jusqu'à chez nous !
+        </p>
+        <button type="button" id="btnModal" value=" j'ai peur du noir">
+          <i class="fas fa-check"></i> j'ai peur du noir
+        </button>
+      </div>
     </div>
     <script src="style_and_js/js/app.js"></script>
   </body>
