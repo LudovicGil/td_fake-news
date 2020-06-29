@@ -3,7 +3,6 @@ const line = document.querySelectorAll(".no-active");
 const menu = document.querySelector(".menu");
 const body = document.querySelector("body");
 const btnWrapper = document.querySelector(".mainWrapper");
-const layer = document.querySelector("#layer");
 
 const btn = document.getElementById("#bla");
 /*EVENT MENU*/
@@ -23,6 +22,9 @@ menuIcons.addEventListener("click", function () {
   }
 });
 
+/* * Verification du formulaire *  */
+
+const layer = document.querySelector("#layer");
 const email = document.querySelector("#email");
 const btnSubmit = document.querySelector("#btnSubmit");
 const name = document.querySelector("#lastName");
@@ -81,6 +83,7 @@ btnSubmit.addEventListener("click", function () {
   }
 });
 
+/* Fermeture de la modal */
 const btnModal = document.querySelector("#btnModal");
 
 btnModal.addEventListener("click", function () {

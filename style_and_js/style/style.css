@@ -78,7 +78,9 @@ p {
   line-height: 1.4;
   color: var(--light-grey);
 }
-
+p a {
+  text-decoration: underline dotted var(--light-grey);
+}
 strong {
   color: var(--middle-grey);
 }
@@ -479,7 +481,9 @@ body.menu-actived {
   margin-bottom: 40px;
   text-align: justify;
 }
-
+.plante {
+  margin-top: 20px;
+}
 /*** FORM ***/
 
 .form-zone {
@@ -529,8 +533,8 @@ body.menu-actived {
 
 .location li a {
   display: inline-block;
+  text-decoration: underline solid var(--light-grey);
 }
-
 .location i {
   margin: 0 25px 0 0;
   text-align: center;
@@ -597,7 +601,9 @@ footer p {
     font-size: 1rem;
     margin-bottom: 40px;
   }
-
+  .last-news article img {
+    margin: 0 auto;
+  }
   .last-news button {
     width: 33%;
     font-size: 0.9rem;
@@ -802,9 +808,11 @@ footer p {
     letter-spacing: 0.2rem;
     color: var(--light-grey);
   }
-
+  .menu li:nth-child(2) {
+    padding-bottom: 20px;
+  }
   .menu ul {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .menu li a {
@@ -847,13 +855,14 @@ footer p {
     z-index: 1000;
   }
 
-  .menu li:hover > ul::after {
+  .menu li:hover > ul::before {
     content: "";
     position: absolute;
     left: 5px;
     top: -10px;
     width: 0;
     height: 0;
+    background-color: transparent;
     border-style: solid;
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent var(--light-grey) transparent;
@@ -879,6 +888,11 @@ footer p {
     left: 100%;
   }
 
+  .menu li ul li:hover ul::before {
+    content: "";
+    border-width: 0;
+  }
+
   /*** LAST ARTICLE ***/
   .container-content {
     width: 90%;
@@ -897,6 +911,7 @@ footer p {
 
   .last-news {
     width: 100%;
+    text-align: center;
   }
 
   .last-news h1 {
@@ -909,6 +924,7 @@ footer p {
     width: 33%;
     margin: 0 25px 0 0;
     text-align: center;
+    margin: 0 auto;
   }
 
   .last-news article h2 {
@@ -916,10 +932,15 @@ footer p {
     margin: 50px 0 30px 0;
     letter-spacing: 0.1rem;
   }
-
+  .last-news article img {
+    margin: 0 auto;
+    width: 90%;
+  }
   .last-news article p {
+    text-align: center;
+    width: 80%;
     font-size: 1rem;
-    margin-bottom: 40px;
+    margin: 0 auto 40px;
   }
 
   .last-news button {
@@ -1094,6 +1115,9 @@ footer p {
     margin-bottom: 30px;
   }
 
+  .location li a:hover {
+    color: var(--orange-hover);
+  }
   /*** FOOTER ***/
   footer {
     text-align: center;
