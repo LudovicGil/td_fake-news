@@ -517,7 +517,7 @@ body.menu-actived {
 
 /* LIST SOCIAL MEDIA */
 .location {
-  overflow: auto;
+  /*   overflow: auto; */
 }
 
 .location > p {
@@ -727,7 +727,9 @@ footer p {
     font-size: 0.8rem;
     margin-bottom: 30px;
   }
-
+  .location li a {
+    width: 120px;
+  }
   /*** FOOTER ***/
 
   footer p {
