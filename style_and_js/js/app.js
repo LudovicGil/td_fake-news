@@ -51,7 +51,7 @@ btnSubmit.addEventListener("click", function () {
     } else {
       errorName.innerHTML = "";
       successName = true;
-      console.log("name");
+      // console.log("name");
     }
     if (email.value === "" || !emailRegex.test(email.value)) {
       message = "Et comment on fait pour vous spammer ?";
@@ -60,7 +60,7 @@ btnSubmit.addEventListener("click", function () {
     } else {
       errorMail.innerHTML = "";
       successMail = true;
-      console.log("mail");
+      // console.log("mail");
     }
     if (textarea.value === "") {
       message = "Non mais allô quoi, tu nous écris et tu nous écris rien ?";
@@ -69,11 +69,11 @@ btnSubmit.addEventListener("click", function () {
     } else {
       errorText.innerHTML = "";
       successText = true;
-      console.log("text");
+      // console.log("text");
     }
-    console.log(successName);
-    console.log(successMail);
-    console.log(successText);
+    // console.log(successName);
+    // console.log(successMail);
+    // console.log(successText);
   }
   if (successName && successMail && successText) {
     layer.classList.remove("modal-hidden");

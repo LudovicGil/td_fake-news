@@ -517,7 +517,7 @@ body.menu-actived {
 
 /* LIST SOCIAL MEDIA */
 .location {
-  overflow: hidden;
+  overflow: auto;
 }
 
 .location > p {
@@ -668,8 +668,8 @@ footer p {
 
   .offer-container img {
     float: none;
-    width: 180px;
     margin: 15px 25px 10px 0;
+    width: 180px;
   }
 
   .offer-container p {
@@ -689,9 +689,9 @@ footer p {
 
   .form-container form input,
   .form-container form textarea {
-    width: 200px;
     margin-bottom: 20px;
     padding: 10px;
+    width: 200px;
   }
 
   .form-container form textarea {
@@ -706,9 +706,9 @@ footer p {
 
   .form-container button {
     text-align: center;
-    width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
+    width: 250px;
   }
 
   /* LIST SOCIAL MEDIA */
@@ -717,10 +717,10 @@ footer p {
   }
 
   .location ul {
-    max-height: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-height: 50%;
   }
 
   .location li {
@@ -751,8 +751,8 @@ footer p {
 
   .menu li a {
     display: block;
-    letter-spacing: 0.2rem;
     color: var(--light-grey);
+    letter-spacing: 0.2rem;
   }
   .menu li:nth-child(2) {
     padding-bottom: 20px;
@@ -762,26 +762,26 @@ footer p {
   }
 
   .menu li a {
-    letter-spacing: 0.2rem;
     color: var(--light-grey);
+    letter-spacing: 0.2rem;
   }
 
   .menu li ul {
-    display: none;
     background: rgba(255, 255, 255, 0.9);
+    display: none;
     margin-top: 10px;
   }
 
   .menu li i {
-    margin-right: 5px;
-    padding: 7px 0 5px 0;
-    text-align: center;
+    border-radius: 50%;
     background-color: var(--middle-grey);
     color: var(--white);
-    width: 30px;
-    height: 30px;
     font-size: 1rem;
-    border-radius: 50%;
+    height: 30px;
+    margin-right: 5px;
+    text-align: center;
+    padding: 7px 0 5px 0;
+    width: 30px;
   }
 
   .menu li:hover i {
@@ -794,32 +794,32 @@ footer p {
 
   /* Second level menu*/
   .menu li:hover > ul {
-    position: absolute;
-    display: block;
     border-radius: var(--border-radius);
     border: 1px solid var(--light-grey);
+    display: block;
+    position: absolute;
     z-index: 1000;
   }
 
   .menu li:hover > ul::before,
   .menu li:hover > ul::after {
-    content: "";
-    position: absolute;
-    left: 5px;
-    top: -10px;
-    width: 0;
-    height: 0;
     background-color: transparent;
     border-style: solid;
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent var(--light-grey) transparent;
+    content: "";
+    height: 0;
+    left: 5px;
+    position: absolute;
+    top: -10px;
+    width: 0;
     z-index: 1000;
   }
   .menu li:hover > ul::before {
-    top: -8px;
     border-style: solid;
     border-width: 0 10px 10px 10px;
     border-color: transparent transparent var(--white) transparent;
+    top: -8px;
     z-index: 1001;
   }
   .menu li ul li a {
@@ -831,8 +831,8 @@ footer p {
   }
 
   .menu li ul li {
-    padding: 5px 0;
     border-bottom: 1px solid black;
+    padding: 5px 0;
   }
 
   /* third level */
@@ -843,15 +843,15 @@ footer p {
 
   .menu li ul li:hover ul::before,
   .menu li ul li:hover ul::after {
-    content: "";
     border-width: 0;
+    content: "";
   }
 
   /*** LAST ARTICLE ***/
   .container-content {
-    width: 90%;
     display: flex;
     flex-direction: column;
+    width: 90%;
   }
 
   /***LAST NEWS***/
@@ -871,8 +871,8 @@ footer p {
   }
 
   .last-news article {
-    width: 33%;
     margin: 0 auto;
+    width: 33%;
   }
 
   .last-news article h2 {
@@ -884,20 +884,20 @@ footer p {
     width: 90%;
   }
   .last-news article p {
-    width: 80%;
     font-size: 1rem;
     margin: 0 auto 40px;
+    width: 80%;
   }
 
   .last-news button {
-    width: 33%;
     font-size: 0.9rem;
+    width: 33%;
   }
 
   /*** OTHER ARTICLES ***/
   .other-articles {
-    flex-direction: row;
     align-items: normal;
+    flex-direction: row;
   }
 
   .principal-other-articles {
@@ -918,9 +918,9 @@ footer p {
   }
 
   .principal-other-articles article button {
-    width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
+    width: 250px;
   }
 
   /* SECONDARY OTHER ARTICLES */
@@ -946,15 +946,15 @@ footer p {
   }
 
   .merch button {
-    width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
+    width: 250px;
   }
 
   .offer-container img {
     float: none;
-    width: 180px;
     margin: 15px 25px 10px 0;
+    width: 180px;
   }
 
   /*** FORM ***/
@@ -975,8 +975,8 @@ footer p {
 
   .form-container form input,
   .form-container form textarea {
-    width: 200px;
     padding: 10px;
+    width: 200px;
   }
 
   .form-container form textarea {
@@ -988,18 +988,18 @@ footer p {
   }
 
   .form-container button {
-    width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
+    width: 250px;
   }
 
   /* LIST SOCIAL MEDIA */
 
   .location ul {
-    max-height: 50%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    max-height: 50%;
   }
 
   .location li {
