@@ -126,7 +126,7 @@ button i {
   background: var(--background-grey);
   border-top: 2px solid var(--light-gray);
 }
-
+/*** MOBILE FIRST ***/
 /***  HEADER  ***/
 
 /*MENU*/
