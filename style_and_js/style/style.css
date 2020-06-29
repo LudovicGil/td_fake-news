@@ -24,24 +24,24 @@
 }
 
 .container-content {
-  width: 80%;
   display: flex;
   flex-direction: column;
   margin: auto;
+  width: 80%;
 }
 #layer.modal-hidden {
   visibility: hidden;
 }
 #modal {
-  text-align: left;
-  padding: 25px 10px 0;
-  position: relative;
-  width: 550px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   background: var(--white);
   border: var(--border-picture);
+  left: 50%;
+  padding: 25px 10px 0;
+  position: relative;
+  text-align: left;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 550px;
 }
 
 #modal button {
@@ -49,34 +49,34 @@
   width: 500px;
 }
 #layer {
-  position: fixed;
-  z-index: 10000;
-  top: 0;
-  left: 0;
   background: black;
-  width: 100%;
   height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 }
 body {
+  display: flex;
   font-family: "Source Sans Pro";
   flex-direction: column;
-  display: flex;
 }
 
 h3 {
+  color: var(--middle-grey);
   font-weight: 600;
   font-size: 1.6rem;
-  text-align: center;
-  color: var(--middle-grey);
-  letter-spacing: 0.2rem;
   margin-bottom: 30px;
+  letter-spacing: 0.2rem;
+  text-align: center;
   text-transform: uppercase;
 }
 
 p {
-  font-size: 1.3rem;
-  line-height: 1.4;
   color: var(--light-grey);
+  line-height: 1.4;
+  font-size: 1.3rem;
 }
 p a {
   text-decoration: underline dotted var(--light-grey);
@@ -90,21 +90,21 @@ strong {
   border-radius: var(--border-radius);
   height: 3px;
   opacity: 0.8;
-  width: 100%;
   margin: 5px 0;
+  width: 100%;
 }
 
 button {
   background: var(--orange);
-  width: 100%;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  color: var(--white);
+  margin-bottom: 50px;
   padding: 20px 50px;
   font-size: 1.2rem;
   font-weight: 400;
   text-transform: uppercase;
-  color: var(--white);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow);
-  margin-bottom: 50px;
+  width: 100%;
 }
 
 button:hover {
@@ -135,35 +135,35 @@ button i {
 
 body.menu-actived {
   margin-left: 250px;
-  overflow: hidden;
   min-width: 100%;
+  overflow: hidden;
 }
 
 .menu {
-  position: relative;
   display: none;
   margin-left: -250px;
+  position: relative;
   width: 250px;
 }
 
 .menu.active {
-  position: fixed;
+  background-color: var(--dark-grey);
   display: block;
   height: 100vh;
-  z-index: 250;
-  background-color: var(--dark-grey);
-  transform: translate(250px);
-  top: 0;
   left: 0;
+  position: fixed;
+  top: 0;
+  transform: translate(250px);
+  z-index: 250;
 }
 
 .menu.active a {
+  border-bottom: 1px var(--background-dark) solid;
+  color: var(--white);
+  display: block;
   font-size: 0.8rem;
   font-weight: 600;
-  display: block;
-  color: var(--white);
   padding: 10px 5px;
-  border-bottom: 1px var(--background-dark) solid;
 }
 
 .menu.active li ul {
@@ -190,28 +190,28 @@ body.menu-actived {
 }
 
 .menuIcons {
-  top: 5px;
-  left: 5px;
-  z-index: 50;
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-direction: column;
-  height: 60px;
-  width: 80px;
   background: var(--light-gray);
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
+  display: flex;
+  height: 60px;
+  left: 5px;
+  justify-content: center;
+  flex-direction: column;
+  top: 5px;
+  width: 80px;
+  z-index: 50;
 }
 
 .menuIcons div {
   background-color: var(--light-grey);
-  opacity: 0.7;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  margin: 3px 0;
-  width: 25px;
   height: 5px;
+  margin: 3px 0;
+  opacity: 0.7;
+  width: 25px;
 }
 
 /* animation de retour des boutons */
@@ -325,33 +325,33 @@ body.menu-actived {
 .brand-name h1 {
   color: var(--orange);
   letter-spacing: 1.1rem;
+  margin-bottom: 20px;
   font-family: "Arvo";
   font-size: 3rem;
   text-transform: uppercase;
   text-shadow: var(--text-shadow);
-  margin-bottom: 20px;
 }
 
 .brand-name p {
-  text-transform: uppercase;
   letter-spacing: 3px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 /***LAST NEWS***/
 .last-news {
-  width: 90%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 50px auto;
+  width: 90%;
 }
 
 .last-news h1 {
-  font-size: 1.8rem;
-  text-transform: uppercase;
   color: var(--light-grey);
+  font-size: 1.8rem;
   margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 .last-news article {
@@ -367,13 +367,13 @@ body.menu-actived {
 }
 
 .last-news article h2 {
-  font-size: 1.6rem;
-  width: 100%;
-  text-transform: uppercase;
-  margin: 30px 0;
   color: var(--light-grey);
+  font-size: 1.6rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
+  margin: 30px 0;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .last-news article p {
@@ -383,32 +383,32 @@ body.menu-actived {
 
 /*** CITATION ***/
 .citation {
-  overflow: hidden;
   margin: 10px 0;
+  overflow: hidden;
   position: relative;
   z-index: 1;
 }
 
 .citation img {
-  min-width: 1600px;
   height: auto;
+  min-width: 1600px;
 }
 
 .citation .text-block {
+  left: 50%;
   position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 90%;
   z-index: 20;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .citation .text-block p {
   color: var(--white);
   font-size: 1.5rem;
+  letter-spacing: 0.7rem;
   text-transform: uppercase;
   text-align: center;
-  letter-spacing: 0.7rem;
 }
 
 .citation .bold {
@@ -422,19 +422,19 @@ body.menu-actived {
 
 /*** OTHERS ARTICLES ***/
 .other-articles {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 45px auto;
 }
 
 .principal-other-articles article h4 {
-  text-align: center;
-  line-height: 1.6;
+  color: var(--light-grey);
   font-size: 1.6rem;
   letter-spacing: 0.2rem;
+  line-height: 1.6;
+  text-align: center;
   text-transform: uppercase;
-  color: var(--light-grey);
 }
 
 .principal-other-articles article img {
@@ -443,22 +443,22 @@ body.menu-actived {
 }
 
 .principal-other-articles article p {
-  line-height: 1.5;
   font-size: 1.3rem;
+  line-height: 1.5;
   margin-bottom: 30px;
   text-align: justify;
 }
 
 /* SECONDARY OTHER ARTICLES */
 .secondary-other-articles article .date {
-  text-align: center;
-  margin: 50px auto 50px;
-  color: var(--white);
-  width: 140px;
   background-color: var(--middle-grey);
   border-radius: var(--border-radius);
   box-shadow: var(--box-shadow);
+  color: var(--white);
+  margin: 50px auto 50px;
   padding: 5px 5px;
+  text-align: center;
+  width: 140px;
 }
 
 .secondary-other-articles article p {
@@ -471,10 +471,10 @@ body.menu-actived {
 }
 
 .offer-container img {
-  float: left;
-  width: 150px;
   border: var(--border-picture);
+  float: left;
   margin: 15px 25px 0 0;
+  width: 150px;
 }
 
 .offer-container p {
@@ -497,11 +497,11 @@ body.menu-actived {
 
 .form-container form input,
 .form-container form textarea {
-  margin-bottom: 20px;
-  padding: 20px;
   box-shadow: inset 3px 3px var(--light-gray);
   border-radius: var(--border-radius);
   border: none;
+  margin-bottom: 20px;
+  padding: 20px;
   width: 100%;
 }
 
@@ -516,6 +516,10 @@ body.menu-actived {
 }
 
 /* LIST SOCIAL MEDIA */
+.location {
+  overflow: hidden;
+}
+
 .location > p {
   margin-bottom: 30px;
 }
@@ -526,9 +530,9 @@ body.menu-actived {
 
 .location li {
   color: var(--light-grey);
+  display: flex;
   font-size: 1.3rem;
   margin-bottom: 50px;
-  display: flex;
 }
 
 .location li a {
@@ -536,21 +540,21 @@ body.menu-actived {
   text-decoration: underline solid var(--light-grey);
 }
 .location i {
+  border-radius: 50%;
+  background-color: var(--middle-grey);
+  color: var(--white);
+  font-size: 1rem;
+  height: 30px;
   margin: 0 25px 0 0;
   text-align: center;
   padding-top: 7px;
-  background-color: var(--middle-grey);
-  color: var(--white);
   width: 30px;
-  height: 30px;
-  font-size: 1rem;
-  border-radius: 50%;
 }
 
 footer {
+  margin: auto;
   text-align: center;
   width: 80%;
-  margin: auto;
 }
 
 footer p {
@@ -561,18 +565,18 @@ footer p {
 /***MEDIA 767 A 991*/
 @media (min-width: 767px) and (max-width: 991px) {
   .container-content {
-    width: 90%;
     display: flex;
     flex-direction: column;
     margin: auto;
+    width: 90%;
   }
 
   /***LAST NEWS***/
   .last-news-container {
     display: flex;
     justify-content: space-between;
+    margin: 0 0 0 20px;
     text-align: center;
-    margin: 0 auto;
   }
 
   .last-news {
@@ -581,42 +585,34 @@ footer p {
 
   .last-news h1 {
     font-size: 1.8rem;
-
     margin: 50px 0 30px 0;
   }
 
   .last-news article {
-    width: 33%;
     margin: 0 25px 0 0;
-    text-align: center;
+    width: 33%;
   }
 
   .last-news article h2 {
     font-size: 0.9rem;
-    margin: 50px 0 30px 0;
     letter-spacing: 0.1rem;
+    margin: 50px 0 30px 0;
   }
 
   .last-news article p {
     font-size: 1rem;
     margin-bottom: 40px;
   }
-  .last-news article img {
-    margin: 0 auto;
-  }
   .last-news button {
-    width: 33%;
     font-size: 0.9rem;
     height: 60px;
-    margin-bottom: 50px;
+    width: 33%;
   }
 
   /*** OTHER ARTICLES ***/
   .other-articles {
-    display: flex;
-    flex-direction: row;
     align-items: normal;
-    margin: 45px auto;
+    flex-direction: row;
   }
 
   .principal-other-articles {
@@ -630,35 +626,21 @@ footer p {
 
   .principal-other-articles article h4 {
     text-align: left;
-    line-height: 1.6;
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    color: var(--light-grey);
-  }
-
-  .principal-other-articles article img {
-    border: var(--border-picture);
-    margin: 30px auto;
   }
 
   .principal-other-articles article p {
-    line-height: 1.5;
     font-size: 1rem;
-    margin-bottom: 30px;
   }
 
   .principal-other-articles article button {
-    text-align: center;
-    width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
+    width: 250px;
   }
 
   /* SECONDARY OTHER ARTICLES */
   .aside-articles {
     min-width: 33%;
-    text-align: left;
   }
 
   .aside-articles p {
@@ -667,27 +649,10 @@ footer p {
 
   .aside-articles h3 {
     font-size: 1.1rem;
-    font-weight: 600;
-  }
-
-  .secondary-other-articles {
-    flex-grow: 2;
-    text-align: left;
   }
 
   .secondary-other-articles article .date {
-    text-align: center;
     margin: 50px 0 50px 0;
-    color: var(--white);
-    width: 140px;
-    background-color: var(--middle-grey);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 5px 5px;
-  }
-
-  .secondary-other-articles article p {
-    margin-bottom: 50px;
   }
 
   /* MERCH */
@@ -696,16 +661,14 @@ footer p {
   }
 
   .merch button {
-    text-align: center;
-    width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
+    width: 250px;
   }
 
   .offer-container img {
     float: none;
     width: 180px;
-    border: var(--border-picture);
     margin: 15px 25px 10px 0;
   }
 
@@ -719,14 +682,7 @@ footer p {
     justify-content: space-between;
   }
 
-  .form-container form {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-  }
-
   .input-flex {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -741,9 +697,10 @@ footer p {
   .form-container form textarea {
     width: 100%;
   }
-
+  .form-zone h3 {
+    font-weight: 400;
+  }
   .form-container [placeholder] {
-    font-family: "Source Sans Pro";
     font-size: 1rem;
   }
 
@@ -759,12 +716,7 @@ footer p {
     margin-left: 20px;
   }
 
-  .location > p {
-    margin-bottom: 30px;
-  }
-
   .location ul {
-    text-align: left;
     max-height: 50%;
     display: flex;
     flex-direction: column;
@@ -772,17 +724,11 @@ footer p {
   }
 
   .location li {
-    color: var(--light-grey);
     font-size: 0.8rem;
     margin-bottom: 30px;
   }
 
   /*** FOOTER ***/
-  footer {
-    text-align: center;
-    width: 80%;
-    margin: auto;
-  }
 
   footer p {
     margin: 40px 0 0 0;
@@ -855,7 +801,8 @@ footer p {
     z-index: 1000;
   }
 
-  .menu li:hover > ul::before {
+  .menu li:hover > ul::before,
+  .menu li:hover > ul::after {
     content: "";
     position: absolute;
     left: 5px;
@@ -868,7 +815,13 @@ footer p {
     border-color: transparent transparent var(--light-grey) transparent;
     z-index: 1000;
   }
-
+  .menu li:hover > ul::before {
+    top: -8px;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent var(--white) transparent;
+    z-index: 1001;
+  }
   .menu li ul li a {
     padding: 15px 25px;
   }
@@ -888,7 +841,8 @@ footer p {
     left: 100%;
   }
 
-  .menu li ul li:hover ul::before {
+  .menu li ul li:hover ul::before,
+  .menu li ul li:hover ul::after {
     content: "";
     border-width: 0;
   }
@@ -898,7 +852,6 @@ footer p {
     width: 90%;
     display: flex;
     flex-direction: column;
-    margin: auto;
   }
 
   /***LAST NEWS***/
@@ -906,38 +859,31 @@ footer p {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    margin: 0 auto;
   }
 
   .last-news {
     width: 100%;
-    text-align: center;
   }
 
   .last-news h1 {
     font-size: 1.8rem;
-
     margin: 50px 0 30px 0;
   }
 
   .last-news article {
     width: 33%;
-    margin: 0 25px 0 0;
-    text-align: center;
     margin: 0 auto;
   }
 
   .last-news article h2 {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin: 50px 0 30px 0;
-    letter-spacing: 0.1rem;
   }
   .last-news article img {
     margin: 0 auto;
     width: 90%;
   }
   .last-news article p {
-    text-align: center;
     width: 80%;
     font-size: 1rem;
     margin: 0 auto 40px;
@@ -946,16 +892,12 @@ footer p {
   .last-news button {
     width: 33%;
     font-size: 0.9rem;
-    height: 60px;
-    margin-bottom: 50px;
   }
 
   /*** OTHER ARTICLES ***/
   .other-articles {
-    display: flex;
     flex-direction: row;
     align-items: normal;
-    margin: 45px auto;
   }
 
   .principal-other-articles {
@@ -969,26 +911,13 @@ footer p {
 
   .principal-other-articles article h4 {
     text-align: left;
-    line-height: 1.6;
-    font-size: 1.6rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    color: var(--light-grey);
-  }
-
-  .principal-other-articles article img {
-    border: var(--border-picture);
-    margin: 30px auto;
   }
 
   .principal-other-articles article p {
-    line-height: 1.5;
     font-size: 1rem;
-    margin-bottom: 30px;
   }
 
   .principal-other-articles article button {
-    text-align: center;
     width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
@@ -997,7 +926,6 @@ footer p {
   /* SECONDARY OTHER ARTICLES */
   .aside-articles {
     min-width: 33%;
-    text-align: left;
   }
 
   .aside-articles p {
@@ -1006,27 +934,10 @@ footer p {
 
   .aside-articles h3 {
     font-size: 1.1rem;
-    font-weight: 600;
-  }
-
-  .secondary-other-articles {
-    flex-grow: 2;
-    text-align: left;
   }
 
   .secondary-other-articles article .date {
-    text-align: center;
     margin: 50px 0 50px 0;
-    color: var(--white);
-    width: 140px;
-    background-color: var(--middle-grey);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow);
-    padding: 5px 5px;
-  }
-
-  .secondary-other-articles article p {
-    margin-bottom: 50px;
   }
 
   /* MERCH */
@@ -1035,7 +946,6 @@ footer p {
   }
 
   .merch button {
-    text-align: center;
     width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
@@ -1044,12 +954,7 @@ footer p {
   .offer-container img {
     float: none;
     width: 180px;
-    border: var(--border-picture);
     margin: 15px 25px 10px 0;
-  }
-
-  .offer-container p {
-    text-align: left;
   }
 
   /*** FORM ***/
@@ -1062,11 +967,6 @@ footer p {
     justify-content: space-around;
   }
 
-  .form-container form {
-    display: flex;
-    flex-direction: column;
-  }
-
   .input-flex {
     display: flex;
     flex-direction: row;
@@ -1076,7 +976,6 @@ footer p {
   .form-container form input,
   .form-container form textarea {
     width: 200px;
-    margin-bottom: 20px;
     padding: 10px;
   }
 
@@ -1085,24 +984,18 @@ footer p {
   }
 
   .form-container [placeholder] {
-    font-family: "Source Sans Pro";
     font-size: 1rem;
   }
 
   .form-container button {
-    text-align: center;
     width: 250px;
     font-size: 0.8rem;
     padding: 15px 10px;
   }
 
   /* LIST SOCIAL MEDIA */
-  .location > p {
-    margin-bottom: 30px;
-  }
 
   .location ul {
-    text-align: left;
     max-height: 50%;
     display: flex;
     flex-direction: column;
@@ -1110,7 +1003,6 @@ footer p {
   }
 
   .location li {
-    color: var(--light-grey);
     font-size: 0.8rem;
     margin-bottom: 30px;
   }
@@ -1119,12 +1011,6 @@ footer p {
     color: var(--orange-hover);
   }
   /*** FOOTER ***/
-  footer {
-    text-align: center;
-    width: 80%;
-    margin: auto;
-  }
-
   footer p {
     margin: 40px 0 0 0;
     padding-bottom: 75px;
