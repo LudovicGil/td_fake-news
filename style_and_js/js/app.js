@@ -37,35 +37,35 @@ const errorText = document.querySelector("#errorText");
 const emailRegex = /^([a-zA-Z0-9_.\-+])+@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 const nameRegex = /^[A-Za-z\\é\\è\\ê\-]+$/;
 
+let successName,
+  successMail,
+  successText,
+  success = false;
 btnSubmit.addEventListener("click", function () {
-  let successName = false;
-  let successMail = false;
-  let successText = false;
-  let success = false;
-  let message;
   if (!success) {
     if (name.value === "" || !nameRegex.test(name.value)) {
-      message = "Les lettres anonymes, c'est mal !";
-      errorName.innerHTML = message;
+      errorName.innerHTML = "Les lettres anonymes, c'est mal !";
       errorName.style.color = "red";
+      name.value = "";
     } else {
       errorName.innerHTML = "";
       successName = true;
       // console.log("name");
     }
     if (email.value === "" || !emailRegex.test(email.value)) {
-      message = "Et comment on fait pour vous spammer ?";
-      errorMail.innerHTML = message;
+      errorMail.innerHTML = "Et comment on fait pour vous spammer ?";
       errorMail.style.color = "red";
+      email.value = "";
     } else {
       errorMail.innerHTML = "";
       successMail = true;
       // console.log("mail");
     }
     if (textarea.value === "") {
-      message = "Non mais allô quoi, tu nous écris et tu nous écris rien ?";
-      errorText.innerHTML = message;
+      errorText.innerHTML =
+        "Non mais allô quoi, tu nous écris et tu nous écris rien ?";
       errorText.style.color = "red";
+      textarea.value = "";
     } else {
       errorText.innerHTML = "";
       successText = true;
@@ -77,14 +77,21 @@ btnSubmit.addEventListener("click", function () {
   }
   if (successName && successMail && successText) {
     layer.classList.remove("modal-hidden");
-    textarea.value = "";
-    email.value = "";
-    name.value = "";
   }
 });
 
 /* Fermeture de la modal */
 const btnModal = document.querySelector("#btnModal");
+
+name.addEventListener("focus", function () {
+  !successName ? (errorName.innerHTML = "") : "";
+});
+email.addEventListener("focus", function () {
+  !successMail ? (errorMail.innerHTML = "") : "";
+});
+textarea.addEventListener("focus", function () {
+  !successText ? (errorText.innerHTML = "") : "";
+});
 
 btnModal.addEventListener("click", function () {
   layer.classList.add("modal-hidden");
