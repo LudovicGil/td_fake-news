@@ -77,6 +77,7 @@ btnSubmit.addEventListener("click", function () {
   }
   if (successName && successMail && successText) {
     layer.classList.remove("modal-hidden");
+    successMail = successName = successText = false;
   }
 });
 
